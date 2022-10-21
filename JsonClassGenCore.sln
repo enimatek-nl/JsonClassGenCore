@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonClassGenCore", "JsonClassGenCore.csproj", "{B3A4D71B-61CD-48A8-87C6-9DF5B7682F58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A4D71B-61CD-48A8-87C6-9DF5B7682F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A4D71B-61CD-48A8-87C6-9DF5B7682F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A4D71B-61CD-48A8-87C6-9DF5B7682F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A4D71B-61CD-48A8-87C6-9DF5B7682F58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83D05587-465F-4C22-9160-D8389634BD6A}
+	EndGlobalSection
+EndGlobal
