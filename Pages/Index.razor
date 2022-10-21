@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<PageTitle>JSON to C#</PageTitle>
+
+<MudGrid>
+    <MudItem xs="6" sm="6" md="6">
+        <MudTextField @bind-Value="JsonInput" Label="Json Input" Variant="Variant.Text" Lines="16"></MudTextField>
+    </MudItem>
+    <MudItem xs="6" sm="6" md="6">
+        <MudTextField @bind-Value="CSharpOutput" Label="CSharp Output" Variant="Variant.Text" Lines="16"></MudTextField>
+    </MudItem>
+</MudGrid>
+
+<MudGrid>
+    <MudItem xs="12" sm="12" md="12">
+        <MudButton OnClick="Convert">Convert</MudButton>
+    </MudItem>
+</MudGrid>
+
+@code {
+    public string JsonInput { get; set; }
+    public string CSharpOutput { get; set; }
+
+    void Convert()
+    {
+        var generate = new JsonClassGenerator();
+        var data = generate.GenerateClasses(JsonInput, out string errors);
+        if (string.IsNullOrWhiteSpace(errors))
+        {
+            CSharpOutput = data.ToString();
+        }
+        else
+        {
+    
+        }
+    }
+}
